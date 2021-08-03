@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="zh" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="footer_contact" datatype="html">
+        <source>contact: </source>
+        <target>联系我们：</target>
+      </trans-unit>
+      <!-- 导航条 -->
+      <trans-unit id="navbar_lang" datatype="html">
+        <source>EN</source>
+        <target>中文</target>
+      </trans-unit>
+      <!-- 首页 -->
+      <trans-unit id="datasets_sidenav_title" datatype="html">
+        <source>Datasets</source>
+        <target>数据集</target>
+      </trans-unit>
+      <trans-unit id="datasets_search_placeholder" datatype="html">
+        <source>Search</source>
+        <target>搜索</target>
+      </trans-unit>
+      <trans-unit id="datasets_search_results_tip" datatype="html">
+        <source>results</source>
+        <target>条结果</target>
+      </trans-unit>
+      <trans-unit id="datasets_search_results_view" datatype="html">
+        <source>View</source>
+        <target>查看详情</target>
+      </trans-unit>
+      <!-- 数据集信息 -->
+      <trans-unit id="dataset_desc" datatype="html">
+        <source>Description</source>
+        <target>描述</target>
+      </trans-unit>
+      <trans-unit id="dataset_details" datatype="html">
+        <source>Details</source>
+        <target>详细信息</target>
+      </trans-unit>
+      <!-- 数据表信息 -->
+      <trans-unit id="dataset_table_schema" datatype="html">
+        <source>Schema</source>
+        <target>纲要</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_schema_name" datatype="html">
+        <source>Name</source>
+        <target>字段名称</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_schema_type" datatype="html">
+        <source>Type</source>
+        <target>类型</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_schema_desc" datatype="html">
+        <source>Description</source>
+        <target>说明</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_details" datatype="html">
+        <source>Details</source>
+        <target>详细信息</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_details_desc" datatype="html">
+        <source>Description</source>
+        <target>说明</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_details_info" datatype="html">
+        <source>Table Info</source>
+        <target>表格信息</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_preview" datatype="html">
+        <source>Preview</source>
+        <target>预览</target>
+      </trans-unit>
+      <!-- 数据表 Drill 查询 -->
+      <trans-unit id="dataset_table_drill_editor" datatype="html">
+        <source>Query Editor</source>
+        <target>查询编辑器</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_submit" datatype="html">
+        <source>RUN QUERY</source>
+        <target>运行</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_return" datatype="html">
+        <source>Back</source>
+        <target>返回</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_title" datatype="html">
+        <source>Results</source>
+        <target>查询结果</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_getmore" datatype="html">
+        <source>Get more</source>
+        <target>加载更多</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_loading" datatype="html">
+        <source>loading...</source>
+        <target>加载中...</target>
+      </trans-unit>
+      <trans-unit id="dataset_table_drill_nomore" datatype="html">
+        <source>No more data</source>
+        <target>没有更多数据了</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

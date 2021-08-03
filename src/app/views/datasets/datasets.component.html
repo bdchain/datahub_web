@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row">
+
+        <!-- 数据列表 -->
+        <div class="col-md-3">
+
+            <links class="data-list">
+
+                <!--Search Form-->
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group md-form mt-0 pt-1 waves-light" mdbWavesEffect>
+                            <input type="text" class="form-control" placeholder="Search" name="search" [ngModel]="search" (ngModelChange)="onSearch($event)">
+                        </div>
+                    </form>
+                </li>
+                <!--/.Search Form-->
+
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <mdb-accordion [multiple]="false" aria-multiselectable="false">
+
+                            <!-- 分类 -->
+                            <mdb-accordion-item *ngFor="let dataset of datasets; let i=index;" [collapsed]="i!=0">
+                                <mdb-accordion-item-head mdbWavesEffect>
+                                    <!-- <i class="fa fa-cubes"></i> {{dataset.name}} -->
+                                    <a (click)="go_dataset($event, dataset, i)">{{dataset.name}}</a>
+                                </mdb-accordion-item-head>
+                                <mdb-accordion-item-body *ngIf="dataset.data">
+                                    <ul>
+                                        <li *ngFor="let table of dataset.data.tables">
+                                                <!-- (click)="set_cur_data(dataset.data, table)" -->
+                                            <a class="waves-effect" mdbWavesEffect [routerLink]="'/dataset/'+dataset.id+'/'+table.name" routerLinkActive="active"><i class="fa fa-th"></i> {{table.name}}</a>
+                                        </li>
+                                    </ul>
+                                </mdb-accordion-item-body>
+                            </mdb-accordion-item>
+
+                        </mdb-accordion>
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </links>
+
+        </div>
+
+        <!-- 数据详情 -->
+        <div class="col-md-9 data-detail">
+
+            <router-outlet></router-outlet>
+            <!-- <pre>{{cur_data | json}}</pre> 
+            -->
+
+        </div>
+    </div>
+</div>

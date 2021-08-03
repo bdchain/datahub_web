@@ -1,0 +1,66 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ie-nav" [containerInside]="false">
+    <mdb-navbar-brand>
+        <a class="logo navbar-brand" href="">
+            <strong>DataHub</strong>
+            <small> - Fudan MediaNET</small>
+        </a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item active waves-light" mdbWavesEffect>
+                <a class="nav-link">Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Features</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">Opinions</a>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+            <!-- <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="nav-item waves-light" mdbWavesEffect>
+                <a class="nav-link">
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li> -->
+
+            <li class="nav-item dropdown" dropdown dropright="true">
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    <ng-container *ngFor="let lang of languages">
+                        <ng-container *ngIf="lang.code == localeId">{{lang.label}}</ng-container>
+                    </ng-container>
+                    <span class="caret"></span>
+                </a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary  dropdown-menu-right" role="menu">
+                    <ng-container *ngFor="let lang of languages">
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="/{{lang.code}}/" *ngIf="lang.code !== localeId">{{lang.label}}</a>
+                    </ng-container>
+                </div>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>
+
+<!-- Main -->
+<main class="mt-5 pt-5">
+    <router-outlet></router-outlet>
+    <div *ngFor="let loading of sharedService.loading" class="loading-mask text-center">
+        <mdb-spinner class="mr-2" spinnerType="big" spinnerColor="blue"></mdb-spinner>
+    </div>
+</main>
+<!-- /.Main -->

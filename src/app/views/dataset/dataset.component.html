@@ -1,0 +1,47 @@
+<div *ngIf="dataset">
+    <h2>{{dataset.name}}</h2>
+    <br>
+    <h4 i18n="@@dataset_desc">Description</h4>
+    <p>{{dataset.description}}</p>
+    <h4 i18n="@@dataset_details">Details</h4>
+    <table class="table table-striped table-sm">
+        <tbody>
+            <tr>
+                <th scope="row">Location</th>
+                <td>{{dataset.data.location}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Category</th>
+                <td>{{dataset.category}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Provider</th>
+                <td>{{dataset.provider}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Publish</th>
+                <td>{{dataset.publish_at}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Start</th>
+                <td>{{dataset.start_from}}</td>
+            </tr>
+            <tr>
+                <th scope="row">End</th>
+                <td>{{dataset.end}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Size</th>
+                <td>{{dataset.size |  fileSize}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Store Format</th>
+                <td>{{dataset.store_format}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Comments</th>
+                <td>{{dataset.comments}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
